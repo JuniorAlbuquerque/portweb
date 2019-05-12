@@ -1,22 +1,6 @@
-.logo {
-    width: 50px;
+.classe {
+  font-size: 15px; }
+  .classe .filho {
+    width: 100%;
     height: 50px;
-}
-
-.texto {
-    font-family: OpenSans;
-}
-
-.gradient {
-    background: rgb(126,193,64);
-    background: linear-gradient(90deg, rgba(126,193,64,1) 0%, rgba(14,195,206,1) 64%, rgba(14,195,206,1) 100%);
-}
-
-.botao {
-    border-color: black;
-    border-width: 2px;
-}
-
-.slide {
-    background: url('images/bgHeader.jpg');
-}
+    font-family: sans-serif; }
