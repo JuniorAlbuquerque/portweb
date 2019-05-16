@@ -1,0 +1,86 @@
+header
+    //bootstrap
+    +clearfix 
+    height: 300px
+    position: relative
+
+    &:after
+        content: " "
+        position: absolute
+        bottom: 0
+        display: block
+        width: 100%
+        height: 30px
+        +gradient(90deg, $verde, $azul)
+
+    background: 
+        image: url('../images/bg.jpg')
+        position: top center // posicionar no topo e no centro
+        repeat: no-repeat // nao repetir a imagem em resoluções menores
+        color: $bg
+        attachment: fixed // efeito parallax
+        // size: cover // preencher toda a tela
+
+    .logo
+        width: 90px
+        margin: 20px 0 20px 0
+        height: 90px
+        float: left // alinhar a esquerda
+
+    .links
+        float: right // alinhar a direita
+        margin: 40px 0 0 0
+
+        nav,
+        .social
+            display: inline-block
+
+        nav
+            +breakpoint($tablet)
+                display: none
+            +breakpoint($celular)
+                isplay: none
+            ul
+                li
+                    display: inline-block // alinhar do lado do outro
+                    margin: 0 30px 0 0 // margin-top, ''MARGIN-RIGHT'', margin-bottom, e margin-left.
+                    a
+                        color: $branco
+                        text-transform: uppercase
+
+        .social
+            
+            li
+                display: inline-block
+                margin: 0 5px 0 0px
+                a
+                    color: $branco
+                    display: block
+                    border: 1px solid $branco
+                    padding: 4px
+                    width: 25px
+                    height: 25px
+                    line-height: 12px
+                    text-align: center
+                    +border-radius(120px)
+                    
+    h1
+        clear: both // alinhar
+        margin: 100px auto 20px auto !important
+        font-size: 35px
+        font-family: code
+        border: 3px solid $branco
+        padding: 10px
+        display: table
+        +breakpoint($celular)
+            +font-size(40px)
+        
+    h1,
+    p
+        color: $branco
+        text-align: center
+
+    p
+        font-family: Open Sans
+        text-transform: uppercase
+    
