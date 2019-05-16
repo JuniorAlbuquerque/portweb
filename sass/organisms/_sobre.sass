@@ -1,0 +1,36 @@
+section.sobre
+    .itens
+        +flexbox
+        +align-items(center)
+        +justify-content(space-around)
+        margin: 30px 0
+
+        .foto
+            +order(3)
+        
+        [class^="icone-"]
+            width: 90px
+            height: 90px
+            background-color: $azul-claro
+            +border-radius(120px)
+            text-align: center
+            line-height: 85px
+            color: $branco
+            +font-size(50px)
+
+            &.icone-lapis
+                +order(1)
+
+            &.icone-code
+                +order(2)
+
+            &.icone-gamepad
+                +order(4)
+
+            &.icone-robo
+                +order(5)
+
+    .textos
+        +make-sm-column(8)
+        +make-sm-column-offset(2)
+        text-align: center
