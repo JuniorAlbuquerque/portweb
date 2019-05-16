@@ -4,10 +4,21 @@ section.sobre
         +align-items(center)
         +justify-content(space-around)
         margin: 30px 0
+        text-align: center
+
+        +make-sm-column(10)
+        +make-sm-column-offset(1)
+
+        +breakpoint($tablet)
+            display: block
 
         .foto
             +order(3)
-        
+            +breakpoint($tablet)
+                margin: 0 0 30px
+                img
+                    width: 140px
+                        
         [class^="icone-"]
             width: 90px
             height: 90px
@@ -17,6 +28,14 @@ section.sobre
             line-height: 85px
             color: $branco
             +font-size(50px)
+
+            +breakpoint($tablet)
+                display: inline-block
+                width: 60px
+                height: 60px
+                font-size: 20px
+                line-height: 65px
+                margin: 0 5px
 
             &.icone-lapis
                 +order(1)
@@ -34,3 +53,9 @@ section.sobre
         +make-sm-column(8)
         +make-sm-column-offset(2)
         text-align: center
+        p
+            font-size: 20px
+            
+        .botao
+            display: table
+            margin: 30px auto
