@@ -16,7 +16,7 @@ header h1 {
   position: relative;
   top: 50%;
   width: 24em;
-  margin: 0 auto;
+  margin: 30px auto;
   border-right: 2px solid #fff;
   font-size: 100%;
   text-align: center;
@@ -25,7 +25,7 @@ header h1 {
 }
 
 .typewriter {
-  animation: typewriter 4s steps(40) 1s 1 normal both,
+  animation: typewriter 4s steps(40) 1.5s 1 normal both,
   blinkTextCursor 500ms steps(40) infinite normal;
   font-family: anonymus;
   font-size: 16px;
