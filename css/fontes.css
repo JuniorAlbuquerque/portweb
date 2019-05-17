@@ -1,8 +1,52 @@
 @font-face {
-    font-family: myFirstFont;
-    src: url('../assets/code-bold.otf');
+  font-family: myFirstFont;
+  src: url('../assets/code-bold.otf');
   }
 
 header h1 {
-    font-family: code;
+  font-family: code;
+}
+
+@font-face {
+  font-family: anonymus;
+  src: url('../assets/AnonymousPro-Regular.ttf');
+}
+
+.line {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid #fff;
+  font-size: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;transform: translateY(-50%);
+}
+
+.typewriter {
+  animation: typewriter 4s steps(40) 1s 1 normal both,
+  blinkTextCursor 500ms steps(40) infinite normal;
+  font-family: anonymus;
+  font-size: 16px;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 17em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
 }
